@@ -8,8 +8,9 @@ const Nav = (props) => {
   const navRef = useRef(null)
   const sentinalRef = useRef([])
   const {meta} = props
+  const {title} = meta
   console.log("meta:",meta)
-  const navBarTitle = meta.title//props.meta.title ? props.meta.title:''
+  const navBarTitle = title//props.meta.title ? props.meta.title:''
   const fullWidth = props.fullWidth
   const handler = ([entry]) => {
     if (navRef && navRef.current && useSticky) {
@@ -43,7 +44,7 @@ const Nav = (props) => {
       >
         <div className="flex items-center">
           <Link href="/">
-            <a aria-label={BLOG.title}>
+            <a aria-label={BLOG.TITLE}>
               <div className="h-6">
                 <svg
                   width="24"
@@ -83,8 +84,8 @@ const Nav = (props) => {
               )
             : (
             <p className="ml-2 font-medium text-slate-600 dark:text-gray-100 header-name">
-              {BLOG.title},{' '}
-              <span className="font-normal">{BLOG.description}</span>
+              {BLOG.TITLE},{' '}
+              <span className="font-normal">{BLOG.DESCRIPTION}</span>
             </p>
               )}
         </div>
