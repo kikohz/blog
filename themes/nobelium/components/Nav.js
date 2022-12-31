@@ -7,12 +7,7 @@ const Nav = (props) => {
   const useSticky = !BLOG.autoCollapsedNavBar
   const navRef = useRef(null)
   const sentinalRef = useRef([])
-  // const {meta} = props
-  // const {title} = meta
   const title = props?.title || BLOG.TITLE
-  console.log("props:",props)
-  console.log("title:",title)
-  const navBarTitle = 'test'//props.meta.title ? props.meta.title:''
   const fullWidth = props.fullWidth
   const handler = ([entry]) => {
     if (navRef && navRef.current && useSticky) {
@@ -78,10 +73,10 @@ const Nav = (props) => {
               </div>
             </a>
           </Link>
-          {navBarTitle
+          {title
             ? (
             <p className="ml-2 font-medium text-slate-600 dark:text-gray-100 header-name">
-              {navBarTitle}
+              {title}
             </p>
               )
             : (
