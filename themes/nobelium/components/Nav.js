@@ -3,10 +3,12 @@ import Link from 'next/link'
 import BLOG from '@/blog.config'
 import { useGlobal } from '@/lib/global'
 
-const Nav = ({ navBarTitle, fullWidth }) => {
+const Nav = (props) => {
   const useSticky = !BLOG.autoCollapsedNavBar
   const navRef = useRef(null)
   const sentinalRef = useRef([])
+  const navBarTitle = props.meta.title
+  const fullWidth = props.fullWidth
   const handler = ([entry]) => {
     if (navRef && navRef.current && useSticky) {
       if (!entry.isIntersecting && entry !== undefined) {
