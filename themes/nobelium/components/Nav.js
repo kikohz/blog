@@ -7,8 +7,9 @@ const Nav = (props) => {
   const useSticky = !BLOG.autoCollapsedNavBar
   const navRef = useRef(null)
   const sentinalRef = useRef([])
-  console.log("props:",props)
-  const navBarTitle = ''//props.meta.title ? props.meta.title:''
+  const {meta} = props
+  console.log("meta:",meta)
+  const navBarTitle = meta.title//props.meta.title ? props.meta.title:''
   const fullWidth = props.fullWidth
   const handler = ([entry]) => {
     if (navRef && navRef.current && useSticky) {
