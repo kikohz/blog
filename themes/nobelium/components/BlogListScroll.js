@@ -9,7 +9,6 @@ export const BlogListScroll = props => {
   const { locale } = useGlobal()
 
   const [page, updatePage] = React.useState(1)
-
   let hasMore = false
   const postsToShow = posts
     ? Object.assign(posts).slice(0, BLOG.POSTS_PER_PAGE * page)

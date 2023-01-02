@@ -113,7 +113,7 @@ const NavBar = (props) => {
             link =>
               link.show && (
                 <li
-                  key={link.id}
+                  key={link.to}
                   className="block ml-4 text-black dark:text-gray-50 nav"
                 >
                   <Link href={link.to}>
