@@ -1,4 +1,4 @@
-# NotionNext
+# NotionNext（本人主要修改了nobelium主题）
 
 <p>
   <a aria-label="GitHub commit activity" href="https://github.com/tangly1024/NotionNext/commits/main" title="GitHub commit activity">
@@ -10,7 +10,7 @@
   <a aria-label="Build status" href="#" title="Build status">
     <img src="https://img.shields.io/github/deployments/tangly1024/NotionNext/Production?logo=Vercel&style=for-the-badge"/>
   </a>
-  <a aria-label="Powered by Vercel" href="https://vercel.com?utm_source=Craigary&utm_campaign=oss" title="Powered by Vercel">
+  <a aria-label="Powered by Vercel" href="https://vercel.com" title="Powered by Vercel">
     <img src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg" height="28"/>
   </a>
 </p>
@@ -20,15 +20,17 @@
 
 ## 预览效果
 
-在线演示：[https://preview.tangly1024.com/](https://preview.tangly1024.com/) ，项目支持多主题切换，没找到喜欢的主题？[贡献](/CONTRIBUTING.md)一个吧~
+在线演示：[https://llost.net/](https://llost.net)
 
-| Next | Medium | Hexo | Fukasawa |
-|--|--|--|--|
-| <img src='./docs/theme-next.png' width='300'/> [预览NEXT](https://preview.tangly1024.com/?theme=next)  | <img src='./docs/theme-medium.png' width='300'/> [预览MEDIUM](https://preview.tangly1024.com/?theme=medium) | <img src='./docs/theme-hexo.png' width='300'/> [预览HEXO](https://preview.tangly1024.com/?theme=hexo) | <img src='./docs/theme-fukasawa.png' width='300'/> [预览FUKASAWA](https://preview.tangly1024.com/?theme=fukasawa) |
+截图:
+![userid](https://objectstorage.ap-seoul-1.oraclecloud.com/n/cno3iavztv8w/b/mybox/o/screenshot1.png)
+![userid](https://objectstorage.ap-seoul-1.oraclecloud.com/n/cno3iavztv8w/b/mybox/o/screenshot2.png)
+
+
+
 
 ## 我要如何开始？
-
-只需几分钟即可搭建您的个人站点，欢迎移步[我的博客](https://tangly1024.com/article/notion-next) 查看教程 
+搭建教程请参考原作者[tangly1024](https://tangly1024.com/article/notion-next) 查看教程 
 
 
 ## 致谢
