@@ -4,16 +4,16 @@ const BLOG = {
   NOTION_PAGE_ID: process.env.NOTION_PAGE_ID || 'c79a757ddfee4d0dab268718deb15798',
   PSEUDO_STATIC: false, // 伪静态路径，开启后所有文章URL都以 .html 结尾。
   NEXT_REVALIDATE_SECOND: 5, // 更新内容缓存间隔 单位(秒)；即每个页面有5秒的纯静态期、此期间无论多少次访问都不会抓取notion数据；调大该值有助于节省Vercel资源、同时提升访问速率，但也会使文章更新有延迟。
-  THEME: process.env.NEXT_PUBLIC_THEME || 'nobelium', // 主题， 支持 ['next','hexo',"fukasawa','medium','example'] @see https://preview.tangly1024.com
+  THEME: process.env.NEXT_PUBLIC_THEME || 'nobelium', // 主题， 支持 ['next','hexo',"fukasawa','medium','example','nobelium'] @see https://preview.tangly1024.com
   THEME_SWITCH: process.env.NEXT_PUBLIC_THEME_SWITCH || false, // 是否显示切换主题按钮
   LANG: 'zh-CN', // e.g 'zh-CN','en-US'  see /lib/lang.js for more.
-  SINCE: 2022, // e.g if leave this empty, current year will be used.
+  SINCE: '', // e.g if leave this empty, current year will be used.
   APPEARANCE: 'auto', // ['light', 'dark', 'auto'], // light 日间模式 ， dark夜间模式， auto根据时间和主题自动夜间模式
 
-  AUTHOR: 'fat uncle', // 作者
+  AUTHOR: 'Fat uncle', // 作者
   BIO: '一个不胖的胖叔叔', // 作者简介
   LINK: 'https://llost.net', // 网站地址
-  KEYWORDS: 'Notion, 博客', // 网站关键词 英文逗号隔开
+  KEYWORDS: 'Notion, 博客,技术,人生,开发', // 网站关键词 英文逗号隔开
   // 社交链接，不需要可留空白，例如 CONTACT_WEIBO:''
   CONTACT_EMAIL: 'kikohz@gmail.com', // 邮箱
   CONTACT_WEIBO: '', // 你的微博个人主页
