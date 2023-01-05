@@ -16,7 +16,7 @@ export async function getStaticProps() {
   props.posts = props.allPages.filter(page => page.type === 'Post' && page.status === 'Published')
   const meta = {
     // title: `${siteInfo?.title} | ${siteInfo?.description}`,
-    //标题删除显示desc by kikohz
+    // 标题删除显示desc by kikohz
     title: `${siteInfo?.title}`,
     description: siteInfo?.description,
     image: siteInfo?.pageCover,

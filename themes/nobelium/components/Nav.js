@@ -7,7 +7,7 @@ const Nav = (props) => {
   const useSticky = !BLOG.autoCollapsedNavBar
   const navRef = useRef(null)
   const sentinalRef = useRef([])
-  //by kikohz 删除标题上面的重复文章标题
+  // by kikohz 删除标题上面的重复文章标题
   // const title = props?.title || BLOG.TITLE
   const title = BLOG.TITLE
   const fullWidth = props.fullWidth
