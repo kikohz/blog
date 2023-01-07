@@ -18,7 +18,8 @@ module.exports = {
           'background-gray': '#f5f5f5',
           'black-gray': '#101414',
           'light-gray': '#e5e5e5'
-        }
+        },
+        'gray-me': '#1d2025'
       }
     }
   },

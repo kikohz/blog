@@ -1,5 +1,5 @@
 import BLOG from '@/blog.config'
-import { Giscus } from '@giscus/react'
+import Giscus from '@giscus/react';
 
 /**
  * Giscus评论 @see https://giscus.app/zh-CN
@@ -9,9 +9,11 @@ import { Giscus } from '@giscus/react'
  */
 
 const GiscusComponent = ({ isDarkMode }) => {
-  const theme = isDarkMode ? 'dark' : 'light'
+  // const theme = isDarkMode ? 'dark' : 'light'
+  const theme = isDarkMode ? 'https://unpkg.com/vuepress-theme-hope@next/templates/giscus/dark.css' : 'https://unpkg.com/vuepress-theme-hope@next/templates/giscus/light.css'
   return (
     <Giscus
+      id="comments"
       repo={BLOG.COMMENT_GISCUS_REPO}
       repoId={BLOG.COMMENT_GISCUS_REPO_ID}
       categoryId={BLOG.COMMENT_GISCUS_CATEGORY_ID}
