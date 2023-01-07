@@ -7,9 +7,9 @@ const BlogPost = ({ post }) => {
     <Link href={`${BLOG.SUB_PATH}/${post.slug}`}>
       <a>
         <article key={post.id} className="mb-6 md:mb-8">
-          <div class="md:flex">
-            <img class="h-28 w-full object-cover md:h-28 md:w-28 rounded-md shadow-md opacity-75" alt='' src={post.page_cover}></img>
-            <div class="flex flex-col justify-between mx-0 md:mx-5">
+          <div className="md:flex">
+            <img className="h-28 w-full object-cover md:h-28 md:w-28 rounded-md shadow-md opacity-75" alt='' src={post.page_cover}></img>
+            <div className="flex flex-col justify-between mx-0 md:mx-5">
               <header className="flex flex-col justify-between  md:items-baseline my-1 md:my-0">
                 <h2 className="text-lg md:text-xl font-medium mb-2 cursor-pointer text-black dark:text-gray-100">
                   {post.title}
