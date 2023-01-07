@@ -5,7 +5,6 @@ import Footer from './components/Footer'
 import JumpToTopButton from './components/JumpToTopButton'
 import TopNav from './components/TopNav'
 import smoothscroll from 'smoothscroll-polyfill'
-import Live2D from '@/components/Live2D'
 import LoadingCover from './components/LoadingCover'
 import { useGlobal } from '@/lib/global'
 import BLOG from '@/blog.config'
@@ -65,9 +64,6 @@ const LayoutBase = props => {
             </main>
 
             {/* 左下角悬浮 */}
-            <div className="bottom-4 -left-14 fixed justify-end z-40">
-                <Live2D />
-            </div>
 
             <div className="bottom-40 right-2 fixed justify-end z-20">
                 <FloatDarkModeButton />

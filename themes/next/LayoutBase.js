@@ -12,7 +12,6 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import smoothscroll from 'smoothscroll-polyfill'
 import CONFIG_NEXT from './config_next'
-import Live2D from '@/components/Live2D'
 import AOS from 'aos'
 import 'aos/dist/aos.css' // You can also use <link> for styles
 import { isBrowser } from '@/lib/utils'
@@ -27,7 +26,6 @@ const LayoutBase = (props) => {
   const { onLoading } = useGlobal()
   const targetRef = React.useRef(null)
   const floatButtonGroup = React.useRef(null)
-  const leftAreaSlot = <Live2D/>
 
   const [show, switchShow] = React.useState(false)
   const [percent, changePercent] = React.useState(0) // 页面阅读百分比
@@ -77,7 +75,7 @@ const LayoutBase = (props) => {
 
       <main id='wrapper' className='flex justify-center flex-1 pb-12'>
           {/* 左侧栏样式 */}
-          <SideAreaLeft slot={leftAreaSlot} targetRef={targetRef} {...props}/>
+          <SideAreaLeft  targetRef={targetRef} {...props}/>
           <section id='container-inner' className={`${CONFIG_NEXT.NAV_TYPE !== 'normal' ? 'mt-40' : ''} lg:max-w-3xl xl:max-w-4xl flex-grow md:mt-0 min-h-screen w-full`} ref={targetRef}>
             {onLoading ? <LoadingCover/> : <> {children}</> }
           </section>

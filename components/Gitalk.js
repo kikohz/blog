@@ -5,8 +5,8 @@ import GitalkComponent from 'gitalk/dist/gitalk-component'
 const Gitalk = ({ frontMatter }) => {
   // 修改gitalk id名字超过50个导致无法使用的问题
   let gid = frontMatter.id
-  if(gid != null && gid.length>=50) {
-    gid = gid.substring(0,49)
+  if (gid != null && gid.length >= 50) {
+    gid = gid.substring(0, 49)
   }
   return <GitalkComponent options={{
     id: gid,
