@@ -10,7 +10,7 @@ import Giscus from '@giscus/react'
 
 const GiscusComponent = ({ isDarkMode }) => {
   // const theme = isDarkMode ? 'dark' : 'light'
-  const theme = isDarkMode ? 'https://unpkg.com/vuepress-theme-hope@next/templates/giscus/dark.css' : 'https://unpkg.com/vuepress-theme-hope@next/templates/giscus/light.css'
+  const theme = isDarkMode ? BLOG.COMMENT_GISCUS_THEME_DARK : BLOG.COMMENT_GISCUS_THEME_LIGHT
   return (
     <Giscus
       id="comments"
