@@ -2,7 +2,7 @@ import BLOG from 'blog.config'
 import React from 'react'
 import dynamic from 'next/dynamic'
 // vercel analytics
-import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from '@vercel/analytics/react'
 
 import 'animate.css'
 import '@/styles/globals.css'
