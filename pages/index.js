@@ -21,7 +21,8 @@ export async function getStaticProps() {
     description: siteInfo?.description,
     image: siteInfo?.pageCover,
     slug: '',
-    type: 'website'
+    type: 'website',
+    'msvalidate.01': 'D56025FCE10E7194F4887229CF6ED3A6'
   }
   // 处理分页
   if (BLOG.POST_LIST_STYLE === 'scroll') {
