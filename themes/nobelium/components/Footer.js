@@ -1,5 +1,4 @@
 import DarkModeButton from '@/components/DarkModeButton'
-import Vercel from '@/components/Vercel'
 import { siteConfig } from '@/lib/config'
 
 export const Footer = (props) => {
@@ -22,7 +21,15 @@ export const Footer = (props) => {
          <p>
            © {siteConfig('AUTHOR')} {copyrightDate}
          </p>
-         <Vercel />
+         <a
+           href="https://www.cloudflare.com"
+           target="_blank"
+           rel="noreferrer"
+           aria-label="Cloudflare"
+           className="hover:underline"
+         >
+           Powered by Cloudflare
+         </a>
        </div>
      </div>
    </footer>
