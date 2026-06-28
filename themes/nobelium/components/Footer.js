@@ -1,13 +1,10 @@
 import DarkModeButton from '@/components/DarkModeButton'
-import { siteConfig } from '@/lib/config'
 
 export const Footer = (props) => {
   const d = new Date()
   const currentYear = d.getFullYear()
   const { post } = props
   const fullWidth = post?.fullWidth ?? false
-  const since = siteConfig('SINCE')
-  const copyrightDate = parseInt(since) < currentYear ? since + '-' + currentYear : currentYear
 
   return <footer
      className={`z-10 relative mt-6 flex-shrink-0 m-auto w-full text-gray-500 dark:text-gray-400 transition-all ${
@@ -17,18 +14,23 @@ export const Footer = (props) => {
      <DarkModeButton className='text-center py-4'/>
      <hr className="border-gray-200 dark:border-gray-600" />
      <div className="my-4 text-sm leading-6">
-       <div className="flex align-baseline justify-between flex-wrap">
+       <div className="flex items-center justify-between flex-wrap">
          <p>
-           © {siteConfig('AUTHOR')} {copyrightDate}
+           © llost {currentYear}
          </p>
          <a
            href="https://www.cloudflare.com"
            target="_blank"
            rel="noreferrer"
            aria-label="Cloudflare"
-           className="hover:underline"
+           className="inline-flex items-center gap-1"
          >
-           Powered by Cloudflare
+           <span className="text-xs">Powered by</span>
+           <img
+             src="https://cdn.simpleicons.org/cloudflare/F38020"
+             alt="Cloudflare"
+             className="h-4 w-auto"
+           />
          </a>
        </div>
      </div>
